@@ -23,7 +23,6 @@ void test_money_to_string() {
 
     // Check cache statistics:
     // For two calls with the same input:
-    //   cache_requests should be 2, and cache_hits should be 1.
     CacheStats st = stats();
     assert(st.cache_requests == 2);
     assert(st.cache_hits == 1);
